@@ -1,0 +1,12 @@
+numpy
+Pillow/PIL
+sklearn
+tensorflow
+matplotlib
+random
+datetime
+pytz
+os
+scipy
+pathlibh
+json
