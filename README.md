@@ -29,3 +29,6 @@ Tensorflow 2.15.0
 
 Sklearn 1.2.2 
 
+In the notebooks, there is also an option to load and use already trained model. These models are available on request. 
+
+The folder metacentrum contains the files for training the models in the first folder as well. Two additional files are here for communication with the metacentrum and for running batch computations. These have a lot of parameters that need to be specified. They are described in the file. For running a job on metacentrum an account is necessary https://metavo.metacentrum.cz/.
