@@ -21,7 +21,7 @@ Note that Colab is using Linux OS, which has a different syntax for OS commands 
 When run, the scripts will at first download the Pix3D dataset from a URL, when run locally this dataset will be saved in the same folder the notebook is in, if run in Colab (recommended), the dataset will be saved in the session's memory, and no files should be saved on the device. Colab also has all the libraries and modules installed that are needed and the interactive environment secures the correct display of the functions messages and figures. 
 However if run locally, ensure that you have these libraries, with at least these versions installed:
 
-Numpy 1.25.2
-Matplotlib 3.7.1
-Tensorflow 2.15.0
-Sklearn 1.2.2
+Numpy 1.25.2 
+Matplotlib 3.7.1 
+Tensorflow 2.15.0 
+Sklearn 1.2.2 
