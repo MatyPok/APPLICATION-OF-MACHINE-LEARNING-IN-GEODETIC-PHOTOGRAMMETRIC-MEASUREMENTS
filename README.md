@@ -4,7 +4,7 @@ Repository for bachelor thesis APPLICATION OF MACHINE LEARNING IN GEODETIC PHOTO
 
 This repository contains the source code for the work Application of Machine Learning in Geodetic Photogrammetric Measurements.
 
-Overview
+## Overview
 
 This work provides a review of modern methods of usage of machine and deep learning
 in spatial information reconstruction with photogrammetric techniques and using these
@@ -14,7 +14,7 @@ supervised learning on publicly available datasets and evaluates their quality a
 sible application in the field of photogrammetry, geodesy and systems which rely on
 transforming 2D information into 3D.
 
-Structure
+## Structure
 
 The folder notebooks contain Jupyter notebooks (.ipynb) for training and basic predefined evaluation of the 7 models that are handled in the thesis. They were written and tested in a Google Colaboratory (Colab) (https://colab.research.google.com/) environment and don't have to run properly in others. 
 Note that Colab is using Linux OS, which has a different syntax for OS commands than Mac or Windows. This will cause an immediate error when running with another OS (OS = Operating System).
