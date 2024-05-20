@@ -22,6 +22,10 @@ When run, the scripts will at first download the Pix3D dataset from a URL, when 
 However if run locally, ensure that you have these libraries, with at least these versions installed:
 
 Numpy 1.25.2 
+
 Matplotlib 3.7.1 
+
 Tensorflow 2.15.0 
+
 Sklearn 1.2.2 
+
