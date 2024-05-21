@@ -1,4 +1,6 @@
-# selecting how much memory, time and computation resources are need
+# Selecting how much memory, time and computation resources are needed
+# for running  with GPU, the specific server has to be selected explicitly,
+# see https://docs.metacentrum.cz/computing/gpu-comput/ for further information about GPU computing
 
 #!/bin/bash
 #PBS -l select=1:ncpus=64:mem=50gb:scratch_local=32gb
@@ -7,7 +9,7 @@
 #PBS -m abe
 # initialize the required application (e.g. Python, version 3.4.1, compiled by gcc)
 
-# paths to the data and files in the meta directories
+# paths to the data and files in the meta directories, change to the actual paths in your meta repository
 trap 'clean_scratch' TERM EXIT
 DATADIR=/storage/projects/CVUT_Fsv_AO/Matyas_BP/results/train
 DATADIR_arrays=/storage/projects/CVUT_Fsv_AO/Matyas_BP/data/pix3d/imgs_256.npz
