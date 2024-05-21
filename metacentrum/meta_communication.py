@@ -4,6 +4,8 @@ import pysftp
 from io import BytesIO,StringIO
 
 # command for running the computation
+# The terminal can run this command, replace the names of the files if yours are named differently or they are not in the same folder,
+# then the complete relative path is necessary
 # RUN: python .\meta_communication.py .\model_1_train.py
 
 # Load env variables from .env
@@ -19,6 +21,7 @@ SFTP_META_USER = os.environ.get("SFTP_META_USER")
 SFTP_META_PWD = os.environ.get("SFTP_META_PWD")
 
 # Project folder on the SFTP server
+# replace the path with the actual path to your folder on the metacentrum
 PROJECT_FOLDER = "/storage/projects/CVUT_Fsv_AO/Matyas_BP/results"
 PROJECT_USER_FOLDER = f"{PROJECT_FOLDER}/train"
 
@@ -26,7 +29,7 @@ PROJECT_USER_FOLDER = f"{PROJECT_FOLDER}/train"
 cnopts = pysftp.CnOpts()
 cnopts.hostkeys = None
 
-# host, username and password can be written explicitly here or be loaded from another script to ensure security
+# host, username and password can be written explicitly here or be loaded from a .env file to ensure security
 with pysftp.Connection(host=SFTP_META_HOST, username=SFTP_META_USER, password=SFTP_META_PWD, cnopts=cnopts) as sftp:
 
     # Change directory to the group folder
