@@ -21,7 +21,7 @@ SFTP_META_USER = os.environ.get("SFTP_META_USER")
 SFTP_META_PWD = os.environ.get("SFTP_META_PWD")
 
 # Project folder on the SFTP server
-# replace the path with the actual path to your folder on the metacentrum
+# replace the path with the actual path to your folder on your metacentrum directory
 PROJECT_FOLDER = "/storage/projects/CVUT_Fsv_AO/Matyas_BP/results"
 PROJECT_USER_FOLDER = f"{PROJECT_FOLDER}/train"
 
